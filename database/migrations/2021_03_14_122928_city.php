@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class State extends Migration
+class City extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class State extends Migration
      */
     public function up()
     {
-        Schema::create('state', function (Blueprint $table) {
+        Schema::create('city', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('state_id');
+            $table->string('city');
             $table->timestamps();
         });
     }
