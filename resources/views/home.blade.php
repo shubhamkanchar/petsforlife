@@ -1,7 +1,22 @@
-@include('section/head')
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"> 
-@include('section/header')
-<div class="container">
+@include('theme_section.header')
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        @include('theme_section.sidebar')
+
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                @include('theme_section.topbar')
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
              <div class="table-responsive">
@@ -44,16 +59,14 @@
         </div>
     </div>
 </div>
-@include('section/footer')
+@include('theme_section.footer')
+@include('theme_section.script')
 
-@include('section/script')
-<script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js" defer></script>
 <script type="text/javascript">
     $(document).ready(function(){
         var table1 = $('.dataTables-example1').DataTable({
             pageLength: 25,
             responsive: true,
-            dom: '<"html5buttons"B>lTfgitp',
             ajax:{
                 url :"{{ route('read_dog_post') }}",
                 dataSrc: 'data'
@@ -66,7 +79,7 @@
                 { data: 'kci' },
                 { data: 'name' },
                 { data: 'mob' },
-                { data: 'available_puppies' },
+                { data: 'available_puppies_male' },
                 { data: 'price' },
                 { data: 'dob' },
                 {"mRender": function(data, type, full) {

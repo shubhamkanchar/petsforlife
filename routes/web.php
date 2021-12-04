@@ -46,3 +46,8 @@ Route::post('/mail', 'HomeController@mail')->name('mail');
 
 Route::post('/', 'HomeController@filter')->name('filter');
 
+Route::get('/dashboard', 'HomeController@dashboard')->middleware('verified')->name('dashboard');
+
+Route::get('/admin_dashboard', 'HomeController@admin_dashboard')->middleware('CheckAdmin')->name('admin_dashboard');
+
+Route::get('/manage-ads', 'HomeController@manage_ads')->middleware('verified')->name('manage_ads');

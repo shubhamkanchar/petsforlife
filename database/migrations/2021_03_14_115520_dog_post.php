@@ -15,6 +15,7 @@ class DogPost extends Migration
     {
         Schema::create('dog_post', function (Blueprint $table) {
             $table->id();
+            $table->integer('customer_id');
             $table->string('name');
             $table->string('kci');
             $table->string('pet_breed')->nullable();
@@ -25,8 +26,9 @@ class DogPost extends Migration
             $table->string('filename')->nullable();
             $table->string('state')->nullable();
             $table->string('city')->nullable();
-            $table->string('available_puppies');
-            $table->string('approved');
+            $table->string('available_puppies_male')->default(0);
+            $table->string('available_puppies_female')->default(0);
+            $table->string('approved')->default(0);
             $table->timestamps();
         });
     }
