@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="{{ asset('mdb/css/mdb.min.css') }}">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-
+	<script data-ad-client="ca-pub-8389774608409033" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<style type="text/css">
 		.card-text {
 			margin-bottom: 2px;
@@ -532,7 +532,7 @@
 									<p><i class="fas fa-phone pr-2"></i>+ 91 ( 9158853602 )</p>
 								</li>
 								<li>
-									<p><i class="fas fa-envelope pr-2"></i>petforlife@gmail.com</p>
+									<p><i class="fas fa-envelope pr-2"></i>admin@petsforlife.in</p>
 								</li>
 							</ul>
 							<hr class="hr-light my-4">
@@ -589,7 +589,7 @@
 
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-					<p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">petsforlife.com</a></p>
+					<p class="h6">© All right Reversed.<a class="text-green ml-2" href="http://petsforlife.in" target="_blank">petsforlife.in</a></p>
 				</div>
 				<hr>
 			</div>
