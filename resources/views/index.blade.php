@@ -191,6 +191,13 @@
 
 			width: 100% !important;
 		}
+		tr{
+			border-bottom: 1px solid lightblue;
+		}
+		td{
+			font-weight: 400 !important;
+			padding-top: 4px;
+		}
 	</style>
 </head>
 
@@ -372,7 +379,7 @@
 									</div>
 								</div>
 								<div class="card-body">
-									<h4 class="card-title">{{ $p->pet_breed }}</h4>
+									<!-- <h4 class="card-title">{{ $p->pet_breed }}</h4>
 									<p class="card-text">Puppies DOB: {{ $p->dob }}</p>
 									<p class="card-text">Price : {{ $p->price }} K</p>
 									<p class="card-text">Is KCI registered? : {{ $p->kci }} </p>
@@ -380,8 +387,52 @@
 									<p class="card-text">Available Puppies Male: {{ $p->available_puppies_male }}</p>
 									<p class="card-text">Available Puppies Female: {{ $p->available_puppies_female }}</p>
 									<p class="card-text">Owner/Seller Name : {{ $p->name }}</p>
-									<p class="card-text">Owner/Seller Mobile No. : {{ $p->mob }}</p>
+									<p class="card-text">Owner/Seller Mobile No. : {{ $p->mob }}</p> -->
 									<!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+									<h4 class="card-title">{{ $p->pet_breed }}</h4>
+									<table>
+										<tr>
+											<td>Puppies DOB </td>
+											<td>:</td>
+											<td>{{ $p->dob }}</td>
+											<td>
+										</tr>
+										<tr>
+											<td>Price </td>
+											<td>:</td>
+											<td>{{ $p->price }} K</td>
+										</tr>
+										<tr>
+											<td>KCI registration </td>
+											<td>:</td>
+											<td> {{ $p->kci }} </td>
+										</tr>
+										<tr>
+											<td>City </td>
+											<td>:</td>
+											<td> {{ $p->city }}</td>
+										</tr>
+										<tr>
+											<td>Available Male Puppies </td>
+											<td>:</td>
+											<td> {{ $p->available_puppies_male }}</td>
+										</tr>
+										<tr>
+											<td>Available Puppies Female </td>
+											<td>:</td>
+											<td> {{ $p->available_puppies_female }}</td>
+										</tr>
+										<tr>
+											<td>Owner Name </td>
+											<td>:</td>
+											<td> {{ $p->name }}</td>
+										</tr>
+										<tr>
+											<td>Owner Mobile No. </td>
+											<td>:</td>
+											<td> {{ $p->mob }}</td>
+										</tr>
+									</table>
 								</div>
 							</div>
 						</div>
