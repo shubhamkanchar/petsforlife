@@ -54,14 +54,14 @@ class HomeController extends Controller
 
     public function store_dog()
     {
-        $file = file_get_contents(public_path() . '\file\dogs.json');
+        $file = file_get_contents(public_path() . '/file/dogs.json');
         $var = json_decode($file, true);
         return response($var, 200);
     }
 
     public function state()
     {
-        $file = file_get_contents(public_path() . '\file\states-and-districts.json');
+        $file = file_get_contents(public_path() . '/file/states-and-districts.json');
         $var = json_decode($file, true);
         $json = $var['states'];
 
